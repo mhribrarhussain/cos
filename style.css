@@ -88,6 +88,17 @@ button {
     align-items: center;
 }
 
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.logo img {
+    height: 50px;
+    width: auto;
+}
+
 .logo h1 {
     font-family: var(--font-heading);
     font-size: 1.8rem;

@@ -4,7 +4,7 @@ const products = [
         id: 1,
         name: "Red Velvet Lipstick",
         category: "lipstick",
-        price: 24.99,
+        price: 299,
         image: "images/2.png",
         description: "Bold and beautiful red lipstick with a velvety matte finish. Long-lasting formula that stays vibrant all day.",
         features: [
@@ -19,7 +19,7 @@ const products = [
         id: 2,
         name: "Pink Nude Lipstick",
         category: "lipstick",
-        price: 22.99,
+        price: 249,
         image: "images/3.png",
         description: "Soft pink nude shade perfect for everyday elegance. Creamy texture for smooth application.",
         features: [
@@ -34,7 +34,7 @@ const products = [
         id: 3,
         name: "Berry Bliss Lipstick",
         category: "lipstick",
-        price: 23.99,
+        price: 279,
         image: "images/4.png",
         description: "Deep berry shade with luxurious shine. Perfect for evening sophistication.",
         features: [
@@ -49,7 +49,7 @@ const products = [
         id: 4,
         name: "Vitamin C Serum",
         category: "skincare",
-        price: 45.99,
+        price: 499,
         image: "images/5.png",
         description: "Brightening serum with pure vitamin C. Reduces dark spots and evens skin tone.",
         features: [
@@ -64,7 +64,7 @@ const products = [
         id: 5,
         name: "Hydrating Face Cream",
         category: "skincare",
-        price: 38.99,
+        price: 399,
         image: "images/6.png",
         description: "Luxurious moisturizing cream for radiant, dewy skin. 24-hour hydration.",
         features: [
@@ -79,7 +79,7 @@ const products = [
         id: 6,
         name: "Radiance Eye Cream",
         category: "skincare",
-        price: 42.99,
+        price: 449,
         image: "images/7.png",
         description: "Premium eye cream that reduces dark circles and puffiness. Reveals brighter, youthful eyes.",
         features: [
@@ -94,7 +94,7 @@ const products = [
         id: 7,
         name: "Rose Gold Palette",
         category: "eyeshadow",
-        price: 52.99,
+        price: 499,
         image: "images/8.png",
         description: "Stunning rose gold eyeshadow palette with 12 shades. From soft neutrals to bold metallics.",
         features: [
@@ -109,7 +109,7 @@ const products = [
         id: 8,
         name: "Nude Essentials Palette",
         category: "eyeshadow",
-        price: 48.99,
+        price: 449,
         image: "images/9.png",
         description: "Essential nude eyeshadow palette for everyday looks. Perfect for creating natural eye looks.",
         features: [
@@ -124,7 +124,7 @@ const products = [
         id: 9,
         name: "Glamour Shimmer Palette",
         category: "eyeshadow",
-        price: 54.99,
+        price: 499,
         image: "images/10.png",
         description: "Dazzling shimmer palette for glamorous looks. Perfect for special occasions and nights out.",
         features: [
@@ -218,7 +218,7 @@ function renderProducts(category) {
                 <p class="product-category">${product.category}</p>
                 <h3 class="product-name">${product.name}</h3>
                 <p class="product-description">${product.description.substring(0, 70)}...</p>
-                <div class="product-price">$${product.price.toFixed(2)}</div>
+                <div class="product-price">Rs ${product.price.toFixed(0)}</div>
             </div>
         </div>
     `).join('');
@@ -232,7 +232,7 @@ function openProductModal(productId) {
     document.getElementById('modalProductImage').src = currentProduct.image;
     document.getElementById('modalCategory').textContent = currentProduct.category;
     document.getElementById('modalProductName').textContent = currentProduct.name;
-    document.getElementById('modalPrice').textContent = `$${currentProduct.price.toFixed(2)}`;
+    document.getElementById('modalPrice').textContent = `Rs ${currentProduct.price.toFixed(0)}`;
     document.getElementById('modalDescription').textContent = currentProduct.description;
     document.getElementById('modalFeatures').innerHTML = currentProduct.features
         .map(f => `<li>${f}</li>`).join('');
@@ -300,7 +300,7 @@ function updateCartUI() {
     
     // Update total price
     const total = cart.reduce((sum, item) => sum + (item.price * item.quantity), 0);
-    totalPrice.textContent = `$${total.toFixed(2)}`;
+    totalPrice.textContent = `Rs ${total.toFixed(0)}`;
     
     // Render cart items
     if (cart.length === 0) {
@@ -317,7 +317,7 @@ function updateCartUI() {
                 </div>
                 <div class="cart-item-details">
                     <div class="cart-item-name">${item.name}</div>
-                    <div class="cart-item-price">$${item.price.toFixed(2)}</div>
+                    <div class="cart-item-price">Rs ${item.price.toFixed(0)}</div>
                     <div class="cart-item-controls">
                         <button class="cart-qty-btn" onclick="updateCartQuantity(${item.id}, ${item.quantity - 1})">-</button>
                         <span class="cart-item-qty">${item.quantity}</span>
@@ -382,14 +382,14 @@ function openCheckout() {
                 <div class="checkout-item-name">${item.name}</div>
                 <div class="checkout-item-qty">Qty: ${item.quantity}</div>
             </div>
-            <div class="checkout-item-price">$${(item.price * item.quantity).toFixed(2)}</div>
+            <div class="checkout-item-price">Rs ${(item.price * item.quantity).toFixed(0)}</div>
         </div>
     `).join('');
     
     // Update totals
     const subtotal = cart.reduce((sum, item) => sum + (item.price * item.quantity), 0);
-    document.getElementById('checkoutSubtotal').textContent = `$${subtotal.toFixed(2)}`;
-    document.getElementById('checkoutTotal').textContent = `$${subtotal.toFixed(2)}`;
+    document.getElementById('checkoutSubtotal').textContent = `Rs ${subtotal.toFixed(0)}`;
+    document.getElementById('checkoutTotal').textContent = `Rs ${subtotal.toFixed(0)}`;
     
     // Show modal
     document.getElementById('checkoutModal').classList.add('active');

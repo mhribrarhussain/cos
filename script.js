@@ -5,7 +5,7 @@ const products = [
         name: "Red Velvet Lipstick",
         category: "lipstick",
         price: 24.99,
-        image: "C:/Users/DELL/.gemini/antigravity/brain/44a8b380-15ac-46b8-828b-cccffb5e45d9/lipstick_red_velvet_1768137505870.png",
+        image: "lipstick_red_velvet_1768137505870.png",
         description: "Bold and beautiful red lipstick with a velvety matte finish. Long-lasting formula that stays vibrant all day.",
         features: [
             "Long-lasting matte finish",
@@ -20,7 +20,7 @@ const products = [
         name: "Pink Nude Lipstick",
         category: "lipstick",
         price: 22.99,
-        image: "C:/Users/DELL/.gemini/antigravity/brain/44a8b380-15ac-46b8-828b-cccffb5e45d9/lipstick_pink_nude_1768137520333.png",
+        image: "lipstick_pink_nude_1768137520333.png",
         description: "Soft pink nude shade perfect for everyday elegance. Creamy texture for smooth application.",
         features: [
             "Natural nude finish",
@@ -35,7 +35,7 @@ const products = [
         name: "Berry Bliss Lipstick",
         category: "lipstick",
         price: 23.99,
-        image: "C:/Users/DELL/.gemini/antigravity/brain/44a8b380-15ac-46b8-828b-cccffb5e45d9/lipstick_berry_bliss_1768137538471.png",
+        image: "lipstick_berry_bliss_1768137538471.png",
         description: "Deep berry shade with luxurious shine. Perfect for evening sophistication.",
         features: [
             "Glossy finish",
@@ -50,7 +50,7 @@ const products = [
         name: "Vitamin C Serum",
         category: "skincare",
         price: 45.99,
-        image: "C:/Users/DELL/.gemini/antigravity/brain/44a8b380-15ac-46b8-828b-cccffb5e45d9/skincare_vitamin_serum_1768137553543.png",
+        image: "skincare_vitamin_serum_1768137553543.png",
         description: "Brightening serum with pure vitamin C. Reduces dark spots and evens skin tone.",
         features: [
             "20% pure vitamin C",
@@ -65,7 +65,7 @@ const products = [
         name: "Hydrating Face Cream",
         category: "skincare",
         price: 38.99,
-        image: "C:/Users/DELL/.gemini/antigravity/brain/44a8b380-15ac-46b8-828b-cccffb5e45d9/skincare_hydrating_cream_1768137569433.png",
+        image: "skincare_hydrating_cream_1768137569433.png",
         description: "Luxurious moisturizing cream for radiant, dewy skin. 24-hour hydration.",
         features: [
             "24-hour moisture",
@@ -80,7 +80,7 @@ const products = [
         name: "Radiance Eye Cream",
         category: "skincare",
         price: 42.99,
-        image: "C:/Users/DELL/.gemini/antigravity/brain/44a8b380-15ac-46b8-828b-cccffb5e45d9/skincare_eye_cream_1768137584590.png",
+        image: "skincare_eye_cream_1768137584590.png",
         description: "Premium eye cream that reduces dark circles and puffiness. Reveals brighter, youthful eyes.",
         features: [
             "Reduces dark circles",
@@ -95,7 +95,7 @@ const products = [
         name: "Rose Gold Palette",
         category: "eyeshadow",
         price: 52.99,
-        image: "C:/Users/DELL/.gemini/antigravity/brain/44a8b380-15ac-46b8-828b-cccffb5e45d9/eyeshadow_rose_palette_1768137599939.png",
+        image: "eyeshadow_rose_palette_1768137599939.png",
         description: "Stunning rose gold eyeshadow palette with 12 shades. From soft neutrals to bold metallics.",
         features: [
             "12 versatile shades",
@@ -110,7 +110,7 @@ const products = [
         name: "Nude Essentials Palette",
         category: "eyeshadow",
         price: 48.99,
-        image: "C:/Users/DELL/.gemini/antigravity/brain/44a8b380-15ac-46b8-828b-cccffb5e45d9/eyeshadow_nude_palette_1768137616250.png",
+        image: "eyeshadow_nude_palette_1768137616250.png",
         description: "Essential nude eyeshadow palette for everyday looks. Perfect for creating natural eye looks.",
         features: [
             "12 nude shades",
@@ -125,7 +125,7 @@ const products = [
         name: "Glamour Shimmer Palette",
         category: "eyeshadow",
         price: 54.99,
-        image: "C:/Users/DELL/.gemini/antigravity/brain/44a8b380-15ac-46b8-828b-cccffb5e45d9/eyeshadow_glam_palette_1768137633619.png",
+        image: "eyeshadow_glam_palette_1768137633619.png",
         description: "Dazzling shimmer palette for glamorous looks. Perfect for special occasions and nights out.",
         features: [
             "Intense shimmer",

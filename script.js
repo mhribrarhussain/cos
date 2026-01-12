@@ -13,7 +13,8 @@ const products = [
             "Comfortable wear",
             "Enriched with vitamin E",
             "Cruelty-free formula"
-        ]
+        ],
+        imageAlt: "Red Velvet Matte Lipstick Rs 299 - Long Lasting Bold Red Lip Color Pakistan - Husanbazar"
     },
     {
         id: 2,
@@ -28,7 +29,8 @@ const products = [
             "Smooth application",
             "All-day comfort",
             "Paraben-free"
-        ]
+        ],
+        imageAlt: "Pink Nude Lipstick Rs 249 - Natural Everyday Lip Color Pakistan - Husanbazar"
     },
     {
         id: 3,
@@ -43,7 +45,8 @@ const products = [
             "Non-drying formula",
             "Vitamin-enriched",
             "Smudge-proof"
-        ]
+        ],
+        imageAlt: "Berry Bliss Lipstick Rs 279 - Deep Berry Glossy Lip Color Evening Makeup - Husanbazar"
     },
     {
         id: 4,
@@ -58,7 +61,8 @@ const products = [
             "Anti-aging properties",
             "Lightweight formula",
             "Dermatologist tested"
-        ]
+        ],
+        imageAlt: "Vitamin C Brightening Serum Rs 499 - Dark Spot Remover Skincare Pakistan - Husanbazar"
     },
     {
         id: 5,
@@ -73,7 +77,8 @@ const products = [
             "Plumps and smooths",
             "Non-greasy formula",
             "Suitable for all skin types"
-        ]
+        ],
+        imageAlt: "Hydrating Face Cream Rs 399 - 24 Hour Moisturizer Dewy Skin Pakistan - Husanbazar"
     },
     {
         id: 6,
@@ -88,7 +93,8 @@ const products = [
             "Caffeine complex",
             "Gentle formula",
             "Ophthalmologist tested"
-        ]
+        ],
+        imageAlt: "Radiance Eye Cream Rs 449 - Dark Circle Reducer Anti-Aging Pakistan - Husanbazar"
     },
     {
         id: 7,
@@ -103,7 +109,8 @@ const products = [
             "Blendable formula",
             "Long-lasting wear",
             "Includes mirror"
-        ]
+        ],
+        imageAlt: "Rose Gold Eyeshadow Palette Rs 499 - 12 Shades Metallic Neutral Makeup Pakistan - Husanbazar"
     },
     {
         id: 8,
@@ -118,7 +125,8 @@ const products = [
             "Crease-resistant",
             "Easy to blend",
             "Travel-friendly"
-        ]
+        ],
+        imageAlt: "Nude Essentials Eyeshadow Palette Rs 449 - 12 Nude Shades Everyday Makeup Pakistan - Husanbazar"
     },
     {
         id: 9,
@@ -133,7 +141,8 @@ const products = [
             "Buttery texture",
             "No fallout",
             "Professional quality"
-        ]
+        ],
+        imageAlt: "Glamour Shimmer Eyeshadow Palette Rs 499 - Glitter Sparkle Special Occasion Makeup - Husanbazar"
     }
 ];
 
@@ -211,7 +220,7 @@ function renderProducts(category) {
     grid.innerHTML = filteredProducts.map(product => `
         <div class="product-card" onclick="openProductModal(${product.id})">
             <div class="product-image">
-                <img src="${product.image}" alt="${product.name}">
+                <img src="${product.image}" alt="${product.imageAlt}">
                 <span class="product-badge">${product.category}</span>
             </div>
             <div class="product-info">

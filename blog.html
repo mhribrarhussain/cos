@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-3SLDXBCBT8"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-3SLDXBCBT8');
+    </script>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beauty Blog - Makeup Tips & Skincare Guides Pakistan | Husanbazar</title>
+    <meta name="description" content="Expert beauty tips, makeup tutorials, and skincare guides for Pakistani women. Learn how to choose the best cosmetics for your skin tone and budget.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        .blog-page { max-width: 1200px; margin: 100px auto 50px; padding: 20px; }
+        .blog-header { text-align: center; margin-bottom: 3rem; }
+        .blog-header h1 { font-family: var(--font-heading); font-size: 2.5rem; color: var(--text-dark); margin-bottom: 1rem; }
+        .blog-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); gap: 2rem; }
+        .blog-card { background: var(--white); border-radius: 15px; overflow: hidden; box-shadow: 0 5px 25px var(--shadow); transition: transform 0.3s ease; }
+        .blog-card:hover { transform: translateY(-5px); }
+        .blog-image { height: 200px; background: linear-gradient(135deg, var(--light-pink), var(--beige)); display: flex; align-items: center; justify-content: center; font-size: 3rem; }
+        .blog-content { padding: 1.5rem; }
+        .blog-date { color: var(--text-light); font-size: 0.9rem; margin-bottom: 0.5rem; }
+        .blog-title { font-family: var(--font-heading); font-size: 1.5rem; color: var(--text-dark); margin-bottom: 1rem; }
+        .blog-excerpt { color: var(--text-light); line-height: 1.6; margin-bottom: 1rem; }
+        .read-more { color: var(--primary-pink); font-weight: 600; text-decoration: none; }
+        .read-more:hover { text-decoration: underline; }
+        @media (max-width: 640px) {
+            .blog-grid { grid-template-columns: 1fr; }
+            .blog-header h1 { font-size: 2rem; }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <img src="images/logo.png" alt="Husanbazar Logo" style="height: 50px;">
+                <h1>Husanbazar</h1>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#products">Products</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="blog-page">
+        <div class="blog-header">
+            <h1>Beauty Blog - Tips & Guides</h1>
+            <p>Expert advice on makeup, skincare, and beauty for Pakistani women</p>
+        </div>
+
+        <div class="blog-grid">
+            <!-- Article 1 -->
+            <article class="blog-card">
+                <div class="blog-image">💄</div>
+                <div class="blog-content">
+                    <p class="blog-date">January 12, 2026</p>
+                    <h2 class="blog-title">Best Affordable Lipstick Shades for Pakistani Skin Tones</h2>
+                    <p class="blog-excerpt">Discover the perfect lipstick shades that complement Pakistani and South Asian skin tones. From classic reds to nude pinks, find your perfect match under Rs 500...</p>
+                    <a href="blog-lipstick-shades.html" class="read-more">Read More →</a>
+                </div>
+            </article>
+
+            <!-- Article 2 -->
+            <article class="blog-card">
+                <div class="blog-image">🌞</div>
+                <div class="blog-content">
+                    <p class="blog-date">January 10, 2026</p>
+                    <h2 class="blog-title">Complete Skincare Routine for Lahore Weather</h2>
+                    <p class="blog-excerpt">Combat Lahore's harsh summer heat and winter dryness with our specialized skincare routine. Learn which products work best in Pakistan's climate...</p>
+                    <a href="blog-skincare-routine.html" class="read-more">Read More →</a>
+                </div>
+            </article>
+
+            <!-- Article 3 -->
+            <article class="blog-card">
+                <div class="blog-image">✨</div>
+                <div class="blog-content">
+                    <p class="blog-date">January 8, 2026</p>
+                    <h2 class="blog-title">Top 5 Makeup Trends in Pakistan 2026</h2>
+                    <p class="blog-excerpt">Stay ahead of the curve with the hottest makeup trends taking over Pakistan in 2026. From dewy skin to bold lips, here's what's trending...</p>
+                    <a href="blog-makeup-trends.html" class="read-more">Read More →</a>
+                </div>
+            </article>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

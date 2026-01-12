@@ -7,5 +7,4 @@ Allow: /
 # Sitemap location
 Sitemap: https://husanbazar.netlify.app/sitemap.xml
 
-# Crawl delay (optional, adjust as needed)
-Crawl-delay: 10
+

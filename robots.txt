@@ -5,7 +5,7 @@ Allow: /
 # Disallow: /admin/
 
 # Sitemap location
-Sitemap: https://www.husanbazar.com/sitemap.xml
+Sitemap: https://husanbazar.netlify.app/sitemap.xml
 
 # Crawl delay (optional, adjust as needed)
 Crawl-delay: 10

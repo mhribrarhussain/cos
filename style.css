@@ -8,7 +8,7 @@
     --cream: #faf7f2;
     --white: #ffffff;
     --text-dark: #4a4a4a;
-    --text-light: #858585;
+    --text-light: #666666; /* Darkened from #858585 for better contrast */
     --border-light: #f0e6dc;
     --shadow: rgba(244, 165, 184, 0.15);
     --overlay: rgba(0, 0, 0, 0.5);

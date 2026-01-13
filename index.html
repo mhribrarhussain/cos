@@ -14,6 +14,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
+    <!-- Preload Hero Image -->
+    <link rel="preload" as="image" href="images/1.png">
+    
     <!-- Primary Meta Tags -->
     <title>Husanbazar - Affordable Luxury Cosmetics in Pakistan | Premium Makeup & Skincare</title>
     <meta name="title" content="Husanbazar - Affordable Luxury Cosmetics in Pakistan">
@@ -333,7 +336,7 @@
     <nav class="navbar">
         <div class="nav-container">
             <div class="logo">
-                <img src="images/logo.png" alt="Husanbazar Logo" style="height: 50px;">
+                <img src="images/logo.png" alt="Husanbazar Logo" style="height: 50px;" width="150" height="50">
                 <h1>Husanbazar</h1>
             </div>
             <ul class="nav-menu">
@@ -343,7 +346,7 @@
                 <li><a href="faq.html">FAQ</a></li>
                 <li><a href="about.html">About</a></li>
             </ul>
-            <button class="cart-toggle" id="cartToggle">
+            <button class="cart-toggle" id="cartToggle" aria-label="Toggle Shopping Cart">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                     <circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/>
                     <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/>
@@ -365,7 +368,7 @@
                 </button>
             </div>
             <div class="hero-image">
-                <img src="images/1.png" alt="Premium Pakistani Cosmetics - Husanbazar Luxury Lipstick Skincare Eyeshadow Collection Under Rs 500">
+                <img src="images/1.png" alt="Premium Pakistani Cosmetics - Husanbazar Luxury Lipstick Skincare Eyeshadow Collection Under Rs 500" width="600" height="600" style="width: 100%; height: auto; aspect-ratio: 1/1;">
             </div>
         </div>
     </section>
@@ -393,7 +396,7 @@
     <div class="cart-sidebar" id="cartSidebar">
         <div class="cart-header">
             <h3>Shopping Cart</h3>
-            <button class="cart-close" id="cartClose">
+            <button class="cart-close" id="cartClose" aria-label="Close Cart">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                     <line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>
                 </svg>
@@ -415,7 +418,7 @@
     <div class="modal" id="productModal">
         <div class="modal-overlay" id="modalOverlay"></div>
         <div class="modal-content">
-            <button class="modal-close" id="modalClose">
+            <button class="modal-close" id="modalClose" aria-label="Close Product Modal">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                     <line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>
                 </svg>
@@ -457,7 +460,7 @@
     <div class="modal" id="checkoutModal">
         <div class="modal-overlay" id="checkoutOverlay"></div>
         <div class="modal-content checkout-modal">
-            <button class="modal-close" id="checkoutClose">
+            <button class="modal-close" id="checkoutClose" aria-label="Close Checkout Modal">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                     <line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>
                 </svg>

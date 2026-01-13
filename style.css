@@ -385,16 +385,17 @@ button {
 }
 
 .product-category {
-    color: var(--text-light);
-    font-size: 0.85rem;
+    color: var(--primary-pink);
+    font-size: 0.9rem;
     text-transform: uppercase;
     letter-spacing: 1px;
     margin-bottom: 0.5rem;
+    font-weight: 600; /* Increased weight for visibility */
 }
 
-.product-name {
+.product-info h3 {
     font-family: var(--font-heading);
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     margin-bottom: 0.5rem;
     color: var(--text-dark);
 }
@@ -407,7 +408,6 @@ button {
 }
 
 .product-price {
-    font-size: 1.5rem;
     font-weight: 600;
     color: var(--primary-pink);
 }

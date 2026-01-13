@@ -220,7 +220,7 @@ function renderProducts(category) {
     grid.innerHTML = filteredProducts.map(product => `
         <div class="product-card" onclick="openProductModal(${product.id})">
             <div class="product-image">
-                <img src="${product.image}" alt="${product.imageAlt}">
+                <img src="${product.image}" alt="${product.imageAlt}" loading="lazy" width="300" height="300" style="width: 100%; height: auto; aspect-ratio: 1/1;">
                 <span class="product-badge">${product.category}</span>
             </div>
             <div class="product-info">
